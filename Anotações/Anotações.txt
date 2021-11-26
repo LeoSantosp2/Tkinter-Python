@@ -63,3 +63,9 @@ ALTERAR COR DA FONTE
 fg='Informar a Cor'
 EX: label_1 = Label(janela, text='Op1', fg='red')
 label_1.pack()
+
+ADICIONANDO BORDAS
+border=Tamanho da Borda
+relief='Tipo da Borda'
+EX: label_1 = Label(janela, text='Op1', border=5, relief='solid')
+label_1.pack()
