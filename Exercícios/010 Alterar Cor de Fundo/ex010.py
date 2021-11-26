@@ -6,6 +6,10 @@ janela.title('Primeiro App')
 
 janela.geometry('500x300+300+250')
 
+#Altera Cor de Fundo da Janela
+janela['bg'] = 'blue'
+
+#Altera Cor de Fundo da Label
 label_1 = Label(text='Esta é a Label 1',
                 bg='#2BFA3D')
 label_1.pack()
