@@ -1,0 +1,65 @@
+BIBLIOTECA QUE TEM QUE IMPORTAR
+# * = Importar todas as funções de qualquer biblioteca
+from tkinter import *
+
+CRIAR A JANELA
+janela = Tk()
+
+janela.mainloop()
+
+ALGUMAS FUNÇÕES
+# Dá um Titulo para Janela
+janela.title('Primeiro App')
+
+# Define um tamanho para janela e onde vai aparecer quando executar
+janela.geometry('500x350+300+250')
+
+# Define de pode ou não redimensionar a janela
+janela.resizable(True, True)
+
+# Define o tamanho minímo da janela
+janela.minsize(width=500, height=350)
+
+# Define o tamanho máximo da janela
+janela.maxsize(width=800, height=400)
+
+# Altera o icone do Janela
+janela.iconbitmap('Icone/Icone.ico')
+
+# Colocar botão na janela
+botao = Button(janela, text='Calcular')
+botao.pack()
+
+# Adcionar um Label
+label_1 = Label(janela, text='Op1')
+label_1.pack()
+
+CENTRALIZAR A JANELA
+# Dimensões da Tela
+largura = 500
+altura = 300
+
+# Resolução do Sistema
+largura_tela = janela.winfo_screenwidth()
+altura_tela = janela.winfo_screenheight()
+
+# Posição da Janela
+posx = largura_tela / 2 - largura / 2
+posy = altura_tela / 2 - altura / 2
+
+janela.geometry('%dx%d+%d+%d' % (largura, altura, posx, posy))
+
+ALTERAR COR DE FUNDO
+gb='Informar a Cor'
+EX: label_1 = Label(janela, text='Op1', bg='red')
+label_1.pack()
+
+ALTERAR FONTE
+font='Familia, Tamanho, Estilo'
+EX: label_1 = Label(janela, text='Op1', font='Arial 20 italic')
+label_1.pack()
+
+ALTERAR COR DA FONTE
+fg='Informar a Cor'
+EX: label_1 = Label(janela, text='Op1', fg='red')
+label_1.pack()
